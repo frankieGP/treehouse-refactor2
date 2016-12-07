@@ -1,4 +1,14 @@
-// Center text
+// Center
+
+//reset all margins
+%margin-reset {
+  margin: 0;
+}
+//reset top and bottom margin with auto left and right
+%margin-auto {
+  margin: 0 auto;
+}
+
 
 
 
@@ -9,11 +19,3 @@
 
 
 // Clearfix
-
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}

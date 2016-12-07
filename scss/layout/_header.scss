@@ -1,0 +1,53 @@
+.header{
+  float: right;
+}
+
+#navbar{
+  @extend %margin-auto;
+  background-color: #EDEFF0;
+  width: 1150px;
+  padding: 0px;
+  /*height: 75px;*/
+  @include box-shadow;
+  overflow: auto;
+}
+
+.border{
+  @extend %margin-reset;
+  padding: 0;
+  text-align: right;
+  color: white;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 5px 5px 0px 0px;
+  &:first-child .border, .module:last-child .border {
+    background-color: #2C9676;
+  }
+  &:nth-child(3) .border{
+    background-color: #838CC7;
+  }
+  &:nth-child(2) .border{
+    background-color: #F092B0;
+  }
+
+}
+
+
+.module {
+  width: 520px;
+  height: 330px;
+  background: white;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 7px 5px -6px rgba(0,0,0,0.2);
+  /*border-top: 50px solid black;*/
+  &:nth-child(odd) {
+    float: left;
+    margin-left: 40px;
+  }
+  &:nth-child(even) {
+    float: right;
+    margin-right: 40px;
+  }
+}
